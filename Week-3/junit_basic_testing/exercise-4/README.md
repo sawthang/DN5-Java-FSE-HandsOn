@@ -1,7 +1,7 @@
 
 ---
 
-README for Exercise 4
+# README for Exercise 4
 Create a file named:
 
 ## `README.md`
