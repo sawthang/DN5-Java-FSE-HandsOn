@@ -1,14 +1,3 @@
-
----
-
-# README for Exercise 4
-Create a file named:
-
-## `README.md`
-inside **Exercise-4-AAA-Pattern-Setup-Teardown**
-
-Paste this:
-
 ```md id="2xkvd1"
 # Exercise 4 - Arrange Act Assert Pattern, Setup and Teardown in JUnit
 
