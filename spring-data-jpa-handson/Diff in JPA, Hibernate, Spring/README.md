@@ -1,6 +1,5 @@
 # Hands on 4 - Difference between JPA, Hibernate and Spring Data JPA
 
-Notes prepared as part of Cognizant training.
 
 ## Java Persistence API (JPA)
 
