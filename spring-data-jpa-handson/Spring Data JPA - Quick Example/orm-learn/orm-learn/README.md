@@ -2,8 +2,6 @@
 
 Demo project for Spring Data JPA and Hibernate.
 
-This is the hands-on exercise "Spring Data JPA - Quick Example" completed as part of Cognizant training.
-
 ## Pre-requisites
 
 - MySQL Server 8.0
