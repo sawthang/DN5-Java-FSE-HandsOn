@@ -1,0 +1,30 @@
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 24px;
+}
+
+button {
+  margin-right: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+input {
+  padding: 6px;
+  margin-right: 8px;
+}
+
+hr {
+  margin: 32px 0;
+}
