@@ -1,0 +1,8 @@
+.content { max-width: 900px; margin: 0 auto; padding: 20px; }
+.global-spinner {
+  background: #fff3cd;
+  color: #856404;
+  padding: 6px 20px;
+  text-align: center;
+  font-size: 13px;
+}

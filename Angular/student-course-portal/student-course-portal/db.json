@@ -1,0 +1,16 @@
+{
+  "courses": [
+    { "id": 1, "name": "Data Structures", "code": "CS101", "credits": 4, "gradeStatus": "passed" },
+    { "id": 2, "name": "Algorithms", "code": "CS102", "credits": 3, "gradeStatus": "pending" },
+    { "id": 3, "name": "Database Systems", "code": "CS201", "credits": 4, "gradeStatus": "passed" },
+    { "id": 4, "name": "Operating Systems", "code": "CS202", "credits": 3, "gradeStatus": "failed" },
+    { "id": 5, "name": "Web Development", "code": "CS301", "credits": 2, "gradeStatus": "pending" }
+  ],
+  "students": [
+    { "id": 1, "name": "Asha Verma", "email": "asha.verma@example.com" }
+  ],
+  "enrollments": [
+    { "id": 1, "courseId": 1, "studentId": 1 },
+    { "id": 2, "courseId": 3, "studentId": 1 }
+  ]
+}

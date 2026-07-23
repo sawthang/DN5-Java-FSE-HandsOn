@@ -1,0 +1,66 @@
+<h2>Enrollment Request (Template-Driven Form)</h2>
+
+<form #enrollForm="ngForm" (ngSubmit)="onSubmit(enrollForm)">
+  <div class="field">
+    <label>Student Name</label>
+    <input
+      name="studentName"
+      [(ngModel)]="model.studentName"
+      required
+      minlength="3"
+      #nameCtrl="ngModel"
+    />
+    <span class="error" *ngIf="nameCtrl.touched && nameCtrl.errors?.['required']">Name is required</span>
+    <span class="error" *ngIf="nameCtrl.touched && nameCtrl.errors?.['minlength']">
+      Name must be at least 3 characters
+    </span>
+  </div>
+
+  <div class="field">
+    <label>Student Email</label>
+    <input
+      type="email"
+      name="studentEmail"
+      [(ngModel)]="model.studentEmail"
+      required
+      email
+      #emailCtrl="ngModel"
+    />
+    <span class="error" *ngIf="emailCtrl.touched && emailCtrl.errors?.['required']">Email is required</span>
+    <span class="error" *ngIf="emailCtrl.touched && emailCtrl.errors?.['email']">Enter a valid email</span>
+  </div>
+
+  <div class="field">
+    <label>Course ID</label>
+    <input
+      type="number"
+      name="courseId"
+      [(ngModel)]="model.courseId"
+      required
+      #courseIdCtrl="ngModel"
+    />
+    <span class="error" *ngIf="courseIdCtrl.touched && courseIdCtrl.errors?.['required']">
+      Course ID is required
+    </span>
+  </div>
+
+  <div class="field">
+    <label>Preferred Semester</label>
+    <select name="preferredSemester" [(ngModel)]="model.preferredSemester">
+      <option value="Odd">Odd</option>
+      <option value="Even">Even</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>
+      <input type="checkbox" name="agreeToTerms" [(ngModel)]="model.agreeToTerms" required />
+      I agree to the terms
+    </label>
+  </div>
+
+  <button type="submit" [disabled]="enrollForm.invalid">Submit</button>
+  <button type="button" (click)="enrollForm.resetForm()">Reset</button>
+
+  <p class="success" *ngIf="submitted">Enrollment request submitted successfully!</p>
+</form>

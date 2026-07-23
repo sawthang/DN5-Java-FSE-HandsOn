@@ -1,0 +1,48 @@
+Hands-On 1, Task 1 — File Purpose Notes
+=========================================
+
+angular.json
+  The Angular CLI workspace configuration — defines projects, build/serve/test
+  targets, file paths, style/script bundles, and per-configuration budgets.
+
+tsconfig.json
+  The root TypeScript configuration shared by the app and spec configs — sets
+  strict type-checking options and Angular compiler options.
+
+tsconfig.app.json
+  Extends tsconfig.json specifically for the application build (excludes spec
+  files); referenced by the "build" architect target in angular.json.
+
+tsconfig.spec.json
+  Extends tsconfig.json specifically for unit tests (includes *.spec.ts files
+  and the Jasmine types); referenced by the "test" architect target.
+
+package.json
+  Lists npm dependencies/devDependencies (Angular, NgRx, RxJS, testing tools)
+  and defines the ng/start/build/test npm scripts.
+
+src/main.ts
+  The application entry point. In standalone-API projects (Angular 17+, and
+  Angular 20 here) it calls bootstrapApplication(AppComponent, appConfig)
+  directly instead of bootstrapping an NgModule.
+
+src/app/app.config.ts
+  Standalone equivalent of app.module.ts — registers app-wide providers:
+  the router, HttpClient + interceptors, and the NgRx store/effects/devtools.
+
+src/app/app.component.ts
+  The root component. Its template hosts <app-header> and <router-outlet>,
+  which is where routed page components are rendered.
+
+src/index.html
+  The single HTML page of the SPA. Contains the <app-root> element that
+  AppComponent bootstraps into, and the <base href="/"> tag the Router needs
+  for correct route resolution.
+
+Notes on angular.json budgets (Task 1, Step 5)
+-----------------------------------------------
+Under architect > build > configurations > production > budgets:
+  - maximumWarning: the bundle-size threshold at which the CLI prints a
+    build warning (500kb for the initial bundle here).
+  - maximumError: the threshold at which the CLI FAILS the production build
+    (1mb here). These budgets catch bundle bloat before it reaches users.

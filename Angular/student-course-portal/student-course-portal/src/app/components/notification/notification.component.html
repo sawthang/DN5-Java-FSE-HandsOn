@@ -1,0 +1,6 @@
+<div class="notifications">
+  <button (click)="addSample()">Add Sample Notification</button>
+  <ul>
+    <li *ngFor="let msg of notificationService.getMessages()">{{ msg }}</li>
+  </ul>
+</div>

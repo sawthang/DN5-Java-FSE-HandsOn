@@ -1,0 +1,31 @@
+/* Global styles for Student Course Portal */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+}
+a { color: #1e5fa8; }
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #1e5fa8;
+  background: #1e5fa8;
+  color: #fff;
+  padding: 6px 14px;
+}
+button:disabled {
+  background: #b7c3cf;
+  border-color: #b7c3cf;
+  cursor: not-allowed;
+}
+input, select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Angular auto-applied form state classes (Hands-On 4) */
+.ng-invalid.ng-touched { border-color: #d9534f; }
+.ng-valid.ng-touched { border-color: #4caf50; }

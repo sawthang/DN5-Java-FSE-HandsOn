@@ -1,0 +1,4 @@
+.field { margin-bottom: 12px; display: flex; flex-direction: column; gap: 4px; max-width: 320px; }
+.array-row { display: flex; gap: 6px; margin-bottom: 6px; }
+.error { color: #d9534f; font-size: 12px; }
+.success { color: #4caf50; font-weight: bold; }

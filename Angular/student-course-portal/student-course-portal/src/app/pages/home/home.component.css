@@ -1,0 +1,4 @@
+.stats-row { display: flex; gap: 24px; margin: 16px 0; }
+.stat { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 12px 20px; text-align: center; }
+.stat strong { display: block; font-size: 22px; }
+.search { margin-top: 16px; }
